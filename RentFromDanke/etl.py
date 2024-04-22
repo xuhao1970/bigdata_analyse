@@ -57,5 +57,5 @@ print(data.info)
 # data.to_csv('D:/GitHub/bigdata_analyse/rent.csv', index=False)
 
 # 保存清洗后的数据 sqlite
-engine = create_engine('sqlite:///D:/GitHub/bigdata_analyse/rent.db')
+engine = create_engine('sqlite:///D:/job_analysize/RentFromDanke/rent.db')
 data.to_sql('rent', con=engine, index=False, if_exists='append')

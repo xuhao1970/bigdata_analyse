@@ -27,7 +27,7 @@ def predict(data, education):
     return model.score(x, y), model.predict(X)
 
 education_list = ['小学', '初中', '中专', '高中', '大专', '本科', '硕士', '博士']
-data = pd.read_csv('train.csv')
+data = pd.read_csv(r'D:\job_analysize\train.csv')
 
 scores, values = [], []
 for education in education_list:
