@@ -12,18 +12,18 @@ from pyecharts.charts import WordCloud, Map
 from pyecharts.globals import SymbolType
 
 # 福利词云
-data = pd.read_csv('welfare.csv')
-
-c = (
-    WordCloud()
-    .add("", data.values, word_size_range=[20, 100], shape=SymbolType.DIAMOND)
-    .set_global_opts(title_opts=opts.TitleOpts())
-    .render("wordcloud.html")
-)
-os.system("wordcloud.html")
+# data = pd.read_csv(r'D:\job_analysize\job_welfare.csv')
+#
+# c = (
+#     WordCloud()
+#     .add("", data.values, word_size_range=[20, 100], shape=SymbolType.DIAMOND)
+#     .set_global_opts(title_opts=opts.TitleOpts())
+#     .render("wordcloud.html")
+# )
+# os.system("wordcloud.html")
 
 # 岗位分布
-data = pd.read_csv('workplace.csv')
+data = pd.read_csv(r'D:\job_analysize\job_workplace.csv')
 
 c1 = (
     Map()
